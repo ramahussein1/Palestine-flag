@@ -7,7 +7,7 @@ def rect(color, x, y, w, h):
     t.pendown()
     t.color(color)
     t.begin_fill()
-    for _ in range(2):
+    for side in range(2):
         t.forward(w)
         t.right(90)
         t.forward(h)
@@ -31,4 +31,5 @@ t.goto(-200, 100)
 t.end_fill()
 
 t.hideturtle()
+
 turtle.done()
